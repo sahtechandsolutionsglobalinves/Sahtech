@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAH Tech and Solutions Global Investment</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    :root {
+      --logo-green: #006400;
+      --logo-light-green: rgba(0, 100, 0, 0.7);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: var(--logo-green) !important;
+    }
+
+    .hero {
+      background: var(--logo-light-green) url('hero.jpg') center/cover no-repeat;
+      min-height: 85vh;
+      padding-top: 80px;
+    }
+
+    .hero h1, .hero p {
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    #about img {
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    #about p {
+      text-align: justify;
+    }
+
+    .card-title {
+      color: var(--logo-green);
+    }
+
+    .btn-success {
+      background-color: var(--logo-green);
+      border-color: var(--logo-green);
+    }
+
+    .btn-success:hover {
+      background-color: #228B22;
+      border-color: #228B22;
+    }
+
+    footer {
+      background-color: var(--logo-green);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 14px;
+      font-size: 24px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20b955;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.PNG" alt="SAH Tech Logo" height="40" class="me-2">
+        SAH Tech & Solutions
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero text-white text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Connecting You to the Future</h1>
+      <p class="lead">Reliable Networking Services Across Nigeria</p>
+      <a href="#contact" class="btn btn-success btn-lg mt-3">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <img src="logo.png" alt="About SAH Tech" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold" style="color: var(--logo-green);">About Us</h2>
+          <p>
+            SAH Tech and Solutions Global Investment is a trusted and innovative provider of networking solutions in Nigeria, fully registered with the Corporate Affairs Commission (CAC) and operating under TIN 33393780-0001. We specialize in delivering high-quality, reliable, and affordable networking services tailored to meet the needs of both businesses and individuals.
+          </p>
+          <p>
+            Our expertise spans structured cabling, network installation, maintenance, and optimization, as well as wireless solutions, CCTV integration, and IT consultancy. With a dedicated team of professionals and a commitment to excellence, we ensure our clients enjoy seamless connectivity, enhanced productivity, and robust data security.
+          </p>
+          <p>
+            At SAH Tech and Solutions, we believe that technology should be a bridge to opportunity. Our mission is to connect people, ideas, and businesses through cutting-edge networking services, empowering them to thrive in an increasingly digital and competitive world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4" style="color: var(--logo-green);">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">LAN & WAN Setup</h5>
+              <p>Professional installation of local and wide area networks with high reliability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Network Troubleshooting</h5>
+              <p>Quick detection and resolution of networking issues to minimize downtime.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">IT Consulting</h5>
+              <p>Guidance on the best networking solutions tailored to your business needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4" style="color: var(--logo-green);">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <small>&copy; 2025 SAH Tech and Solutions Global Investment | CAC Reg: 8663003 | TIN: 33393780-0001</small>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/2348012345678" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS + Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</body>
+</html>
